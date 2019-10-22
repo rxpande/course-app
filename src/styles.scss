@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* CSS for Spacing for Add Course Buttom */
+.m-b-sm {
+    margin-bottom:15px;
+}
+.container-wrap {
+    background-color: #eeeeee;
+    min-height: 500px;
+}
+
+.card-content {
+    padding: 20px 0px;
+}
+
+.card-button {
+    margin: 20px 0px 0px 90px      
+}
+
+.course-row {
+    background-color:#fff;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.edit-button {
+    margin-right:5px;
+}
+
+.course-search {
+    padding-top:20px;
+}
+
+.course-footer {
+    float: right;
+    padding-top: 10px;
+    margin-right: 50px;
+}
