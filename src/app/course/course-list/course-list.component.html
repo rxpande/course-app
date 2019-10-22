@@ -1,0 +1,25 @@
+<div class="row course-row" *ngFor="let item of courseItems">    
+    <div class="col-md-9">
+        <div class="card-content">
+            <h5>{{item.title}}
+                <span class="float-right">
+                    <i class="fa fa-clock-o fa-sm" aria-hidden="true"></i>
+                    {{item.durationMinutes}}
+                    <i class="fa fa-calendar fa-sm" aria-hidden="true"></i>
+                    {{item.creationDate | date: format}}
+                </span>
+            </h5>
+            <p>{{item.description}}</p>
+        </div> 
+    </div>
+    <div class="col-md-3">
+        <div class="card-button">
+            <button type="button" class="btn btn-primary edit-button">
+                <i class="fa fa-pencil" aria-hidden="true"></i> Edit
+            </button>
+            <button type="button" class="btn btn-primary">
+                <i class="fa fa-trash" aria-hidden="true"></i> Delete
+            </button>
+        </div>
+    </div>
+</div>
