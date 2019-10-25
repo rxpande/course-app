@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { CourseSearchComponent } from './course-search/course-search.component';
 import { CourseAddComponent } from './course-add/course-add.component';
 import { CourseListComponent } from './course-list/course-list.component';
@@ -11,7 +12,8 @@ import { CourseListComponent } from './course-list/course-list.component';
     CourseListComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     CourseSearchComponent,

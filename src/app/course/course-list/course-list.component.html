@@ -14,12 +14,26 @@
     </div>
     <div class="col-md-3">
         <div class="card-button">
-            <button type="button" class="btn btn-primary edit-button">
-                <i class="fa fa-pencil" aria-hidden="true"></i> Edit
+            <button 
+              type="button" 
+              class="btn btn-primary edit-button"
+              (click)="editCourse()">
+                <i class="fa fa-pencil" aria-hidden="true" ></i> Edit
             </button>
-            <button type="button" class="btn btn-primary">
+            <button 
+              type="button" 
+              class="btn btn-primary"
+              (click)="deleteCourse()">
                 <i class="fa fa-trash" aria-hidden="true"></i> Delete
             </button>
         </div>
     </div>
+</div>
+
+<div class="row course-row">    
+  <div class="col-md-9">
+    <div class="card-content">
+      <h5 class="loadMore" (click)="loadMore()">Load More</h5>
+    </div>
+  </div>
 </div>

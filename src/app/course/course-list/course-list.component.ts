@@ -15,4 +15,16 @@ export class CourseListComponent implements OnInit {
     this.courseItems = this.courseService.getCourseItems();
   }
 
+  editCourse(): void {
+    console.log('editCourse clicked');
+  }
+
+  deleteCourse(): void {
+    console.log( 'deleteCourse Clicked' );
+  }
+
+  loadMore(): void {
+      console.log( 'loadMore Clicked' );
+  }
+
 }

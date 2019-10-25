@@ -6,10 +6,14 @@
                 class="form-control" 
                 placeholder="Text to Search" 
                 aria-label="Input group example" 
-                aria-describedby="btnGroupAddon">
+                aria-describedby="btnGroupAddon"
+                [(ngModel)]="searchText">
         </div>
         <div class="input-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-success">Search</button>
+            <button 
+              type="button" 
+              class="btn btn-success"
+              (click)="search()">Search</button>
         </div>
     </div>
 </div>

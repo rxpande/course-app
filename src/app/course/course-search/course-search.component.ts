@@ -6,9 +6,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseSearchComponent implements OnInit {
 
+  searchText: string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  search() {
+    console.log('Search Clicked with Text ', this.searchText);
   }
 
 }
