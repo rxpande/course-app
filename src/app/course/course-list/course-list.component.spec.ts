@@ -22,4 +22,21 @@ describe('CourseListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  describe('Perform Course List Operations', () => {
+    it('Edit Course', async( () => {
+      const result = component.editCourse();
+      expect(result).toBe('editCourse clicked');
+    }));
+
+    it('Delete Course', async( () => {
+      const result = component.deleteCourse();
+      expect(result).toBe('deleteCourse clicked');
+    }));
+
+    it('Laod More Courses', async( () => {
+      const result = component.loadMore();
+      expect(result).toBe('loadMore clicked');
+    }));
+  });
 });
